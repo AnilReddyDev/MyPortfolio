@@ -7,6 +7,8 @@ import tweetimg from "./assets/tweetimg.png";
 import mruimg from "./assets/mruimg.png";
 import TextHighlight from "./components/TextHighlight";
 import HighlightEffect from "./components/HighlightEffect";
+import EmailLink from "./components/EmailLink";
+
 export default function App() {
   return (
     <div className="w-screen h-auto poppins-regular flex flex-col lg:flex-row lg:justify-center items-center lg:items-start  bg-[#0E1733]">
@@ -135,7 +137,10 @@ export default function App() {
             PROJECTS
           </h1>
 
-          <div onClick={() => window.open("https://mruspace.in", "_blank")} className="project1 cursor-pointer w-full h-auto  flex flex-col-reverse lg:flex-row rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 ">
+          <div
+            onClick={() => window.open("https://mruspace.in", "_blank")}
+            className="project1 cursor-pointer w-full h-auto  flex flex-col-reverse lg:flex-row rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 "
+          >
             <div className="w-4/5 lg:w-1/3 h-auto">
               <img
                 src={mruimg}
@@ -179,7 +184,12 @@ export default function App() {
             </div>
           </div>
 
-          <div onClick={() => window.open("https://saveurnotes.netlify.app/", "_blank")} className="project2 cursor-pointer py-10 w-full h-auto  flex flex-col-reverse lg:flex-row  rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 ">
+          <div
+            onClick={() =>
+              window.open("https://saveurnotes.netlify.app/", "_blank")
+            }
+            className="project2 cursor-pointer py-10 w-full h-auto  flex flex-col-reverse lg:flex-row  rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 "
+          >
             <div className="w-4/5 lg:w-1/3 h-auto">
               <img
                 src={noteimg}
@@ -218,12 +228,19 @@ export default function App() {
                 <li className=" text-xs lg:text-base px-2 lg:px-4 py-1 lg:py-2 text-medium  rounded-full bg-opacity-20 bg-green-200 hover:bg-opacity-25">
                   TailwindCSS
                 </li>
-                
               </ul>
             </div>
           </div>
 
-          <div onClick={() => window.open("https://github.com/AnilReddyDev/TweetIt/tree/master/Api", "_blank")} className="project3 cursor-pointer py-10 w-full h-auto  flex flex-col-reverse lg:flex-row  rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 ">
+          <div
+            onClick={() =>
+              window.open(
+                "https://github.com/AnilReddyDev/TweetIt/tree/master/Api",
+                "_blank"
+              )
+            }
+            className="project3 cursor-pointer py-10 w-full h-auto  flex flex-col-reverse lg:flex-row  rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 "
+          >
             <div className="w-4/5 lg:w-1/3 h-auto">
               <img
                 src={tweetimg}
@@ -255,7 +272,7 @@ export default function App() {
                 users can view each other's posts.
               </p>
               <ul className="flex flex-wrap gap-3 lg:gap-5 text-green-400 ">
-              <li className=" text-xs lg:text-base px-2 lg:px-4 py-1 lg:py-2 text-medium  rounded-full bg-opacity-20 bg-green-200 hover:bg-opacity-25">
+                <li className=" text-xs lg:text-base px-2 lg:px-4 py-1 lg:py-2 text-medium  rounded-full bg-opacity-20 bg-green-200 hover:bg-opacity-25">
                   React
                 </li>
                 <li className=" text-xs lg:text-base px-2 lg:px-4 py-1 lg:py-2 text-medium  rounded-full bg-opacity-20 bg-green-200 hover:bg-opacity-25">
@@ -274,7 +291,12 @@ export default function App() {
             </div>
           </div>
 
-          <div onClick={() => window.open("https://anilterminal.netlify.app", "_blank")} className="project4 cursor-pointer py-10 w-full h-auto  flex flex-col-reverse lg:flex-row  rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 ">
+          <div
+            onClick={() =>
+              window.open("https://anilterminal.netlify.app", "_blank")
+            }
+            className="project4 cursor-pointer py-10 w-full h-auto  flex flex-col-reverse lg:flex-row  rounded-md lg:hover:shadow-[0px_1px_31px_0px_#44337a] lg:px-3 lg:py-10 "
+          >
             <div className="w-4/5 lg:w-1/3 h-auto">
               <img
                 src={terminalimg}
@@ -325,11 +347,19 @@ export default function App() {
               I'm Always up for a chat
             </h1>
             <p className="lg:text-base text-sm text-normal opacity-90 lg:pr-32">
-              <span className="font-bold lg:text-lg underline">
-                Pop me an email
-              </span>{" "}
-              at Konyalaanilreddy00@gmail.com or ping me  on social
-              media handles.
+              <span className="font-bold hidden lg:inline-block lg:text-lg underline">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=konyalaanilreddy00@gmail.com"
+                  target="_blank"
+                >
+                  Pop me an email
+                </a>
+              </span>
+              <span className="mobile lg:hidden font-bold lg:text-lg underline">
+                <EmailLink/>
+                </span>{" "}
+              at Konyalaanilreddy00@gmail.com or ping me on social media
+              handles.
             </p>
             <img
               src={humanArt}
