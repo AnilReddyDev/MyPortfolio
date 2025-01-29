@@ -23,7 +23,7 @@ export default function App() {
             ABOUT
           </h1>
           <p className="text-base text-normal text-white/[0.65] lg:text-white/[0.75] ">
-            <p className="hidden lg:block">
+            <p className=" lg:block">
               I’m a <TextHighlight text="Web Developer & AI Enthusiast" /> based
               in <TextHighlight text="Hyderabad" />, passionate about building{" "}
               <TextHighlight text="scalable, user-friendly applications" />.
@@ -35,7 +35,7 @@ export default function App() {
               />
               .
             </p>
-            <p className="hidden lg:block pt-2">
+            <p className=" lg:block pt-2">
               I specialize in <TextHighlight text="React, TailwindCSS, JS " />
               and{" "}
               <TextHighlight
@@ -60,11 +60,10 @@ export default function App() {
               />
             </p>
           </p>
-          <p
-            className="py-2 flex gap-1 cursor-pointer items-center underline"
-            onClick={() =>
-              window.open("/public/AnilReddy_Resume.pdf", "_blank")
-            }
+          <a
+            className="lg:py-5 pt-4 flex gap-1 cursor-pointer items-center underline"
+            href="/AnilReddy_Resume.pdf" 
+      download="Resume.pdf"
           >
         
             <svg
@@ -81,7 +80,7 @@ export default function App() {
                 d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
               />
             </svg>Resume here
-          </p>
+          </a>
         </div>
 
         <div className="h-auto w-full pr-2">
