@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const HighlightEffect = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -8,9 +8,9 @@ const HighlightEffect = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
