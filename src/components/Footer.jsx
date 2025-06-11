@@ -12,7 +12,7 @@ function Footer() {
         <p className="lg:text-base text-sm text-normal opacity-90 lg:pr-32">
           <span className="font-bold hidden lg:inline-block lg:text-lg underline">
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=konyalaanilreddy00@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=anilreddy0514@gmail.com"
               target="_blank"
             >
               Pop me an email
@@ -21,7 +21,7 @@ function Footer() {
           <span className="mobile lg:hidden font-bold lg:text-lg underline">
             <EmailLink />
           </span>{" "}
-          at Konyalaanilreddy00@gmail.com or ping me on social media handles.
+          at anilreddy0514@gmail.com or ping me on social media handles.
         </p>
         <img
           src={humanArt}
