@@ -6,12 +6,14 @@ export default function Header() {
           {" "}
           Anil Reddy
         </h1>
-        <h3 className="text-lg lg:text-2xl pb-3 lg:pb-5 font-medium lg:opacity-95 opacity-85">
-          Frontend Developer
+        <h3 className="text-base lg:text-lg pb-3 lg:pb-5 font-medium lg:opacity-95 opacity-85">
+          Software Engineer |<br></br> Java Full Stack & Frontend Developer
         </h3>
-        <p className="text-md lg:text-lg  lg:mr-60 lg:opacity-85 opacity-65">
-          I build pixel-perfect, engaging, and accessible digital experiences.
-        </p>
+        {/* <p className="text-md lg:text-lg  lg:mr-60 lg:opacity-85 opacity-65">
+          Software Engineer at HCLTech with hands-on experience in Java full
+          stack development and modern frontend technologies. Recently
+          transitioned into full-time project work.
+        </p> */}
       </div>
       <ul
         className="ml-1 mt-5 flex items-center opacity-65 lg:opacity-90"

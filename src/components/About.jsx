@@ -1,20 +1,23 @@
 function About() {
   return (
     <div className="h-auto w-full pr-2">
-      <h1 className=" text-base font-semibold pb-5 pt-2 opacity-80 lg:opacity-95 lg:text-lg ">
+      <h1 className=" text-lg font-semibold pb-5 pt-0 opacity-80 lg:opacity-95 lg:text-lg ">
         ABOUT
       </h1>
       <p className="text-base text-normal text-white/[0.85] lg:text-white/[0.90]">
-        - I’m a Web Developer & AI-driven Developer based in Hyderabad, India.
+        - I’m a Software Engineer at HCLTech, currently working as a Graduate
+        Engineer Trainee and recently transitioned from Java Full Stack training
+        into full-time role.
       </p>
       <p className="text-base text-normal text-white/[0.85] lg:text-white/[0.90] pt-1">
-        - I recently graduated in May 2025 with a B.Tech in CSE (AI & ML) from
-        Malla Reddy University.
+        - I have hands-on experience building and understanding end-to-end web
+        applications using Java, Spring Boot, REST APIs, and modern frontend
+        technologies like React and Tailwind CSS.
       </p>
       <p className="text-base text-normal text-white/[0.85] lg:text-white/[0.90] pt-1">
-        - I enjoy building responsive, intelligent web apps with React,
-        TailwindCSS and JavaSript, and I’m currently open to opportunities where
-        I can learn, build, and grow.
+        - I enjoy working in agile teams, learning enterprise-level development
+        practices, and building scalable, maintainable applications that solve
+        real-world problems.
       </p>
 
       <a
